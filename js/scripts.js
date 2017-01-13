@@ -7,17 +7,17 @@ var userLocation = 0;
 
 var questionLocation = function(){
   if (userLocation === "seattle") {
-    alert("Seattle");
+    // alert("Seattle");
     $("#location").fadeOut();
     $("#question1").fadeIn();
     $("#seattle").show();
   } else if (userLocation === "portland") {
-    alert("Portland");
+    // alert("Portland");
     $("#location").fadeOut();
     $("#question1").fadeIn();
     $("#portland").show();
   } else {
-    alert("Philadelphia")
+    // alert("Philadelphia")
     $("#location").fadeOut();
     $("#question1").fadeIn();
     $("#philadelphia").fadeIn();;
