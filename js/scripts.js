@@ -1,27 +1,44 @@
 // Business (or back-end) logic:
 var frontVsBack = 0;
+var enterprise = 0;
+
+var question1 = function(){
+  if (frontVsBack === "frontend") {
+    $("#def-pop-container").fadeIn();
+    $("#frontend-def").fadeIn();
+    // $("#question1").fadeOut();
+    $("#question2").fadeIn();
+  } else {
+    $("#def-pop-container").fadeIn();
+    $("#backend-def").fadeIn();
+    // $("#question1").fadeOut();
+    $("#question2").fadeIn();
+  };
+};
+
+var question2 = function(){
+  if (enterprise === "yes") {
+    $("#question3").fadeIn();
+  } else {
+    
+  }
+}
 
 
 // Everything below this line is user interface (or front-end) logic:
 $(document).ready(function(){
-
   $("#front-or-back-form").submit(function(event) {
     event.preventDefault();
-
     $(".def-pop-box").hide();
-
     frontVsBack = $("input:radio[name=frontvsback]:checked").val();
-
-    console.log(frontVsBack);
-
-    if (frontVsBack === "frontend") {
-      $("#def-pop-container").fadeIn();
-      $("#frontend-def").fadeIn();
-    } else {
-      $("#def-pop-container").fadeIn();
-      $("#backend-def").fadeIn();
-    };
-
+    // console.log(frontVsBack);
+    question1();
+  });
+  $("#enterprise-form").submit(function(event) {
+    event.preventDefault();
+    enterprise = $("input:radio[name=enterprise]:checked").val();
+    // console.log(frontVsBack);
+    question2();
   });
 
   // $("button#front-back-yes").onClick(function(){
