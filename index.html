@@ -9,11 +9,11 @@
   <title>Epicodus Track Suggester</title>
 </head>
 <body>
+  <div class="jumbotron">
+    <h1>Epicodus Track Suggester</h1>
+    <h2>An Interactive Guide to Choosing Your Epicodus Track</h2>
+  </div>
   <div class="container">
-    <div class="jumbotron">
-      <h1>Epicodus Track Suggeter</h1>
-      <h2>An Interactive Guide to Choosing Your Epicodus Track</h2>
-    </div>
     <form id="front-or-back-form">
       <div class="form-group">
         <h2>Would you rather:</h2>
@@ -31,8 +31,8 @@
       <button type="submit" class="btn">Submit</button>
     </form>
 
-    <div id="front-end-def">
-      <h2>What is Front End development?</h2>
+    <div class="def-pop-box" id="frontend-def">
+      <h2>Frontend Development</h2>
       <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
         <p>When we discuss the “frontend” of the web, what we’re really talking about is the part of the web that you can see and interact with. The frontend usually consists of two parts: the web design and front end web development.</p>
 
@@ -45,8 +45,8 @@
 
       <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
     </div>
-    <div id="back-end-def">
-      <h2>What is Back End development?</h2>
+    <div class="def-pop-box" id="backend-def">
+      <h2>Backend Development</h2>
       <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
         <p>The backend usually consists of three parts: a server, an application, and a database. If you book a flight or buy concert tickets, you usually open a website and interact with the frontend. Once you’ve entered that information, the application stores it in a database that was created on a server. For sake of ease, just think about a database as a giant Excel spreadsheet on your computer, but your computer (server) is stored somewhere in Arizona</p>
 
@@ -57,6 +57,16 @@
 
       <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
     </div>
+
+    <div class="row" id="bugs">
+      <h2>Bugs</h2>
+      <ul>
+        <li>Radio buttons appearing inline?</li>
+        <li>Applying .form-control to radio button inputs breaks them</li>
+      </ul>
+    </div>
   </div>
+
+
 </body>
 </html>

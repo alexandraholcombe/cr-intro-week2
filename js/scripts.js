@@ -8,14 +8,16 @@ $(document).ready(function(){
   $("#front-or-back-form").submit(function(event) {
     event.preventDefault();
 
+    $(".def-pop-box").hide();
+
     frontVsBack = $("input:radio[name=frontvsback]:checked").val();
 
     console.log(frontVsBack);
 
     if (frontVsBack === "frontend") {
-      $("#front-end-def").show();
+      $("#frontend-def").show();
     } else {
-      $("#back-end-def").show();
+      $("#backend-def").show();
     };
 
 
