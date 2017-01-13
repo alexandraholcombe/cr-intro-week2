@@ -36,7 +36,7 @@ var question1 = function() {
     $("#def-pop-container").fadeIn();
     $("#backend-def").fadeIn();
     // $("#question1").fadeOut();
-    $("#question2").fadeIn();
+    // $("#question2").fadeIn();
   };
 };
 
@@ -75,9 +75,19 @@ var question4 = function() {
 var buttonClick = function() {
   id = event.target.id;
   if (id == "front-back-yes") {
-    alert("Front-Back-Yes");
+    $("#def-pop-container").fadeOut();
+    $(".def-pop-box").fadeOut();
+    $("#question1").fadeOut();
+    $("#question2").fadeIn();
   } else {
-    alert("Front-Back-No");
+    $("#def-pop-container").fadeOut();
+    $(".def-pop-box").fadeOut();
+    $("#question1").fadeIn();
+    // alert("Front-Back-No");
+    // $("#def-pop-container").fadeIn();
+    // $("#backend-def").fadeIn();
+    // $("#def-pop-container").fadeOut();
+    // $("#frontend-def").fadeOut();
   };
 };
 
