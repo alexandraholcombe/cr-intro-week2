@@ -78,7 +78,7 @@ var buttonClick = function() {
     $("#def-pop-container").fadeOut();
     $(".def-pop-box").fadeOut();
     $("#question1").fadeOut();
-    if ($(".frontend-def").is(":visible")){
+    if ($("#frontend-def").is(":visible")){
       $("#result-container").fadeIn();
       $("#css").fadeIn();
     } else {
