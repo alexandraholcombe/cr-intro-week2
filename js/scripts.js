@@ -4,6 +4,7 @@ var company = 0;
 var android = 0;
 var rubyPhp = 0;
 var userLocation = 0;
+var id = 0;
 
 var questionLocation = function(){
   if (userLocation === "seattle") {
@@ -24,7 +25,7 @@ var questionLocation = function(){
   };
 };
 
-var question1 = function(){
+var question1 = function() {
   $(".def-pop-box").hide();
   if (frontVsBack === "frontend") {
     $("#def-pop-container").fadeIn();
@@ -39,7 +40,7 @@ var question1 = function(){
   };
 };
 
-var question2 = function(){
+var question2 = function() {
   if (company === "large") {
     $("#question3").fadeIn();
   } else {
@@ -47,7 +48,7 @@ var question2 = function(){
   }
 }
 
-var question3 = function(){
+var question3 = function() {
   if (android === "android") {
     $(".question").fadeOut();
     $("#result-container").fadeIn();
@@ -59,7 +60,7 @@ var question3 = function(){
   };
 };
 
-var question4 = function(){
+var question4 = function() {
   if (rubyPhp === "ruby") {
     $(".question").fadeOut();
     $("#result-container").fadeIn();
@@ -68,6 +69,15 @@ var question4 = function(){
     $(".question").fadeOut();
     $("#result-container").fadeIn();
     $("#php").fadeIn();
+  };
+};
+
+var buttonClick = function() {
+  id = event.target.id;
+  if (id == "front-back-yes") {
+    alert("Front-Back-Yes");
+  } else {
+    alert("Front-Back-No");
   };
 };
 
@@ -105,13 +115,7 @@ $(document).ready(function(){
     question4();
   });
 
-  // $("button#front-back-yes").onClick(function(){
-  //   $("#question1").hide();
-  //
-  // });
-  //
-  // $("button#front-back-no").onClick(function(){
-  //   $("#front-end-def").hide();
-  //   $("#back-end-def").hide();
-  // });
+  $("#front-back-yes, #front-back-no").click(function(event) {
+    buttonClick();
+  });
 });
