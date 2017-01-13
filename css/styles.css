@@ -1,6 +1,6 @@
 body {
   background-color: #72b8c9;
-
+  font-family: 'Open Sans', sans-serif;
 }
 .container {
   background-color: white;
@@ -23,6 +23,12 @@ button.confirm {
   display: block;
   margin: 10px auto;
 }
+
+label {
+  display: block;
+}
+
+/*Hide IDs*/
 #def-pop-container {
   display: none;
 }
@@ -34,10 +40,6 @@ button.confirm {
   margin: 20px auto;
   width: 80%;
   padding: 1% 3%;
-}
-
-label {
-  display: block;
 }
 
 #question2 {

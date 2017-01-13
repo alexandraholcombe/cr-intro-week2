@@ -7,7 +7,7 @@ var question1 = function(){
     $("#def-pop-container").fadeIn();
     $("#frontend-def").fadeIn();
     // $("#question1").fadeOut();
-    $("#question2").fadeIn();
+    // $("#question2").fadeIn();
   } else {
     $("#def-pop-container").fadeIn();
     $("#backend-def").fadeIn();
@@ -20,7 +20,7 @@ var question2 = function(){
   if (enterprise === "yes") {
     $("#question3").fadeIn();
   } else {
-    
+
   }
 }
 
