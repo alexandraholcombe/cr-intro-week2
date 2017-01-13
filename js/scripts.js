@@ -5,6 +5,18 @@ var android = 0;
 var rubyPhp = 0;
 var userLocation = 0;
 
+var questionLocation = function(){
+  if (userLocation === "seattle") {
+    alert("Seattle");
+    $("#user-location").fadeOut();
+    $("#question1").fadeIn();
+  } else if (userLocation === "portland") {
+    alert("Portland");
+  } else {
+    alert("Philadelphia");
+  };
+};
+
 var question1 = function(){
   if (frontVsBack === "frontend") {
     $("#def-pop-container").fadeIn();
