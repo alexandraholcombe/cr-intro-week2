@@ -1,0 +1,7 @@
+.citation {
+  font-style: italic;
+}
+
+#front-end-def, #back-end-def {
+  display: none;
+}
