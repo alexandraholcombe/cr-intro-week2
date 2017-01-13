@@ -30,12 +30,12 @@ var question1 = function() {
   if (frontVsBack === "frontend") {
     $("#def-pop-container").fadeIn();
     $("#frontend-def").fadeIn();
-    // $("#question1").fadeOut();
+    $("#question1").fadeOut();
     // $("#question2").fadeIn();
   } else {
     $("#def-pop-container").fadeIn();
     $("#backend-def").fadeIn();
-    // $("#question1").fadeOut();
+    $("#question1").fadeOut();
     // $("#question2").fadeIn();
   };
 };
@@ -78,7 +78,12 @@ var buttonClick = function() {
     $("#def-pop-container").fadeOut();
     $(".def-pop-box").fadeOut();
     $("#question1").fadeOut();
-    $("#question2").fadeIn();
+    if ($(".frontend-def").is(":visible")){
+      $("#result-container").fadeIn();
+      $("#css").fadeIn();
+    } else {
+      $("#question2").fadeIn();
+    };
   } else {
     $("#def-pop-container").fadeOut();
     $(".def-pop-box").fadeOut();
