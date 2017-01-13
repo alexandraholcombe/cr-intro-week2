@@ -3,6 +3,7 @@ var frontVsBack = 0;
 var company = 0;
 var android = 0;
 var rubyPhp = 0;
+var userLocation = 0;
 
 var question1 = function(){
   if (frontVsBack === "frontend") {
