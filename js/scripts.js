@@ -63,7 +63,7 @@ var question4 = function() {
   };
 };
 
-var buttonClick = function() {
+var confirmClick = function() {
   id = event.target.id;
   $("#def-pop-container").fadeOut();
   $(".def-pop-box").fadeOut();
@@ -83,6 +83,11 @@ var buttonClick = function() {
     // $("#def-pop-container").fadeOut();
     // $("#frontend-def").fadeOut();
   };
+};
+
+var getStarted = function(){
+  $("#splash-page").fadeOut();
+  $("#location").fadeIn();
 };
 
 
@@ -120,6 +125,10 @@ $(document).ready(function(){
   });
 
   $("#front-back-yes, #front-back-no").click(function(event) {
-    buttonClick();
+    confirmClick();
+  });
+
+  $("#btn-started").click(function() {
+    getStarted();
   });
 });
