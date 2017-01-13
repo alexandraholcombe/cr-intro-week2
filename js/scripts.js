@@ -15,11 +15,22 @@ $(document).ready(function(){
     console.log(frontVsBack);
 
     if (frontVsBack === "frontend") {
-      $("#frontend-def").show();
+      $("#def-pop-container").fadeIn();
+      $("#frontend-def").fadeIn();
     } else {
-      $("#backend-def").show();
+      $("#def-pop-container").fadeIn();
+      $("#backend-def").fadeIn();
     };
 
-
   });
+
+  // $("button#front-back-yes").onClick(function(){
+  //   $("#question1").hide();
+  //
+  // });
+  //
+  // $("button#front-back-no").onClick(function(){
+  //   $("#front-end-def").hide();
+  //   $("#back-end-def").hide();
+  // });
 });

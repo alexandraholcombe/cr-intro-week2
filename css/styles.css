@@ -15,6 +15,18 @@ body {
   font-style: italic;
 }
 
+p.confirm {
+  text-align: center;
+}
+
+button.confirm {
+  display: block;
+  margin: 10px auto;
+}
+#def-pop-container {
+  display: none;
+}
+
 #frontend-def, #backend-def {
   display: none;
   background-color: #fe5e31;

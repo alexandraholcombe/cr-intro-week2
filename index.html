@@ -14,56 +14,63 @@
     <h2>An Interactive Guide to Choosing Your Epicodus Track</h2>
   </div>
   <div class="container">
-    <form id="front-or-back-form">
-      <div class="form-group">
-        <h2>Would you rather:</h2>
-        <div class="radio">
-          <label>
-            <input type="radio" name="frontvsback" value="frontend">
-            Make things look and work well for the user
-          </label>
-          <label>
-            <input type="radio" name="frontvsback" value="backend">
-            Write the code that connects the server, the application, and the database
-          </label>
+    <div id="question1">
+      <form id="front-or-back-form">
+        <div class="form-group">
+          <h2>Would you rather:</h2>
+          <div class="radio">
+            <label>
+              <input type="radio" name="frontvsback" value="frontend">
+              Make things look and work well for the user
+            </label>
+            <label>
+              <input type="radio" name="frontvsback" value="backend">
+              Write the code that connects the server, the application, and the database
+            </label>
+          </div>
         </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div id="def-pop-container">
+        <div class="def-pop-box" id="frontend-def">
+          <h2>Frontend Development</h2>
+          <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
+            <p>When we discuss the “frontend” of the web, what we’re really talking about is the part of the web that you can see and interact with. The frontend usually consists of two parts: the web design and front end web development.</p>
+
+            <p>In the past when someone discussed development it usually referred to the backend, but in recent years there has been a real need to differentiate between designers that worked strictly in Photoshop and those that could code HTML and CSS. It went even further when designers crossed the lines to working with JavaScript and jQuery.</p>
+
+            <p>So now when we discuss the term “web design”, we’re really talking about those that work with Photoshop and Fireworks, and those that code using HTML, CSS, JavaScript or jQuery (it might be important here to state that jQuery is a compiled library of Javascript).</p>
+
+            <p>Everything that you see when using the web is a combination of HTML, CSS, and JavaScript all being controlled by your computer’s browser. These include things like fonts, drop-down menus, buttons, transitions, sliders, contact forms, etc.</p>
+          </blockquote>
+
+          <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
+        </div>
+        <div class="def-pop-box" id="backend-def">
+          <h2>Backend Development</h2>
+          <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
+            <p>The backend usually consists of three parts: a server, an application, and a database. If you book a flight or buy concert tickets, you usually open a website and interact with the frontend. Once you’ve entered that information, the application stores it in a database that was created on a server. For sake of ease, just think about a database as a giant Excel spreadsheet on your computer, but your computer (server) is stored somewhere in Arizona</p>
+
+            <p>All of that information stays on the server so when you log back into the application to print your tickets, all of the information is still there in your account.</p>
+
+            <p>We call a person that builds all of this technology to work together a backend developer. Backend technologies usually consist of languages like PHP, Ruby, Python, etc. To make them even easier to use they’re usually enhanced by frameworks like Ruby on Rails, Cake PHP, and Code Igniter that all make development faster and easier to collaborate on.</p>
+          </blockquote>
+
+          <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
+        </div>
+        <!-- <p class="confirm">Sound right?</p>
+        <button type="button" class="confirm btn" id="front-back-yes">Yes!</button>
+        <button type="button" class="confirm btn" id="front-back-no">Not quite</button> -->
       </div>
-      <button type="submit" class="btn">Submit</button>
-    </form>
-
-    <div class="def-pop-box" id="frontend-def">
-      <h2>Frontend Development</h2>
-      <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
-        <p>When we discuss the “frontend” of the web, what we’re really talking about is the part of the web that you can see and interact with. The frontend usually consists of two parts: the web design and front end web development.</p>
-
-        <p>In the past when someone discussed development it usually referred to the backend, but in recent years there has been a real need to differentiate between designers that worked strictly in Photoshop and those that could code HTML and CSS. It went even further when designers crossed the lines to working with JavaScript and jQuery.</p>
-
-        <p>So now when we discuss the term “web design”, we’re really talking about those that work with Photoshop and Fireworks, and those that code using HTML, CSS, JavaScript or jQuery (it might be important here to state that jQuery is a compiled library of Javascript).</p>
-
-        <p>Everything that you see when using the web is a combination of HTML, CSS, and JavaScript all being controlled by your computer’s browser. These include things like fonts, drop-down menus, buttons, transitions, sliders, contact forms, etc.</p>
-      </blockquote>
-
-      <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
-    </div>
-    <div class="def-pop-box" id="backend-def">
-      <h2>Backend Development</h2>
-      <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
-        <p>The backend usually consists of three parts: a server, an application, and a database. If you book a flight or buy concert tickets, you usually open a website and interact with the frontend. Once you’ve entered that information, the application stores it in a database that was created on a server. For sake of ease, just think about a database as a giant Excel spreadsheet on your computer, but your computer (server) is stored somewhere in Arizona</p>
-
-        <p>All of that information stays on the server so when you log back into the application to print your tickets, all of the information is still there in your account.</p>
-
-        <p>We call a person that builds all of this technology to work together a backend developer. Backend technologies usually consist of languages like PHP, Ruby, Python, etc. To make them even easier to use they’re usually enhanced by frameworks like Ruby on Rails, Cake PHP, and Code Igniter that all make development faster and easier to collaborate on.</p>
-      </blockquote>
-
-      <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
-    </div>
-
-    <div class="row" id="bugs">
-      <h2>Bugs</h2>
-      <ul>
-        <li>Radio buttons appearing inline?</li>
-        <li>Applying .form-control to radio button inputs breaks them</li>
-      </ul>
+      <div class="row" id="bugs">
+        <h2>Bugs</h2>
+        <ul>
+          <li>Radio buttons appearing inline?</li>
+          <li>Applying .form-control to radio button inputs breaks them</li>
+          <li>Confirm buttons don't work</li>
+        </ul>
+      </div>
     </div>
   </div>
 
