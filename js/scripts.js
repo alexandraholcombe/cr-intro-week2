@@ -8,16 +8,21 @@ var userLocation = 0;
 var questionLocation = function(){
   if (userLocation === "seattle") {
     alert("Seattle");
-    $("#user-location").fadeOut();
+    $("#location").fadeOut();
     $("#question1").fadeIn();
   } else if (userLocation === "portland") {
     alert("Portland");
+    $("#location").fadeOut();
+    $("#question1").fadeIn();
   } else {
-    alert("Philadelphia");
+    alert("Philadelphia")
+    $("#location").fadeOut();
+    $("#question1").fadeIn();;
   };
 };
 
 var question1 = function(){
+  $(".def-pop-box").hide();
   if (frontVsBack === "frontend") {
     $("#def-pop-container").fadeIn();
     $("#frontend-def").fadeIn();
@@ -62,9 +67,14 @@ var question4 = function(){
 
 // Everything below this line is user interface (or front-end) logic:
 $(document).ready(function(){
+  $("#location-form").submit(function(event) {
+    event.preventDefault();
+    userLocation = $("select#user-location").val();
+    // console.log(frontVsBack);
+    questionLocation();
+  });
   $("#front-or-back-form").submit(function(event) {
     event.preventDefault();
-    $(".def-pop-box").hide();
     frontVsBack = $("input:radio[name=frontvsback]:checked").val();
     // console.log(frontVsBack);
     question1();
