@@ -10,15 +10,13 @@
   <title>Epicodus Track Suggester</title>
 </head>
 <body>
-  <div class="jumbotron">
+  <div class="container">
     <h1>Epicodus Track Suggester</h1>
     <h2>An Interactive Guide to Choosing Your Epicodus Track</h2>
-  </div>
-  <div class="container">
-    <div id="question1">
+    <div class="question" id="question1">
       <form id="front-or-back-form">
         <div class="form-group">
-          <h2>Would you rather:</h2>
+          <h3>Would you rather:</h3>
           <div class="radio">
             <label>
               <input type="radio" name="frontvsback" value="frontend">
@@ -35,7 +33,7 @@
 
       <div id="def-pop-container">
         <div class="def-pop-box" id="frontend-def">
-          <h2>Frontend Development</h2>
+          <h3>Frontend Development</h3>
           <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
             <p>When we discuss the “frontend” of the web, what we’re really talking about is the part of the web that you can see and interact with. The frontend usually consists of two parts: the web design and front end web development.</p>
 
@@ -49,7 +47,7 @@
           <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
         </div>
         <div class="def-pop-box" id="backend-def">
-          <h2>Backend Development</h2>
+          <h3>Backend Development</h3>
           <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
             <p>The backend usually consists of three parts: a server, an application, and a database. If you book a flight or buy concert tickets, you usually open a website and interact with the frontend. Once you’ve entered that information, the application stores it in a database that was created on a server. For sake of ease, just think about a database as a giant Excel spreadsheet on your computer, but your computer (server) is stored somewhere in Arizona</p>
 
@@ -64,54 +62,54 @@
         <button type="button" class="confirm btn" id="front-back-yes">Yes!</button>
         <button type="button" class="confirm btn" id="front-back-no">Not quite</button> -->
       </div>
-
-      <div id="question2">
-        <form id="enterprise-form">
-          <div class="form-group">
-            <h2>Are you interested in working for a large enterprise company?</h2>
-            <div class="radio">
-              <label>
-                <input type="radio" name="enterprise" value="yes">
-                Yes
-              </label>
-              <label>
-                <input type="radio" name="enterprise" value="no">
-                No
-              </label>
-            </div>
+    </div>
+    <div class="question" id="question2">
+      <form id="enterprise-form">
+        <div class="form-group">
+          <h3>Are you interested in working for a large enterprise company?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="enterprise" value="yes">
+              Yes
+            </label>
+            <label>
+              <input type="radio" name="enterprise" value="no">
+              No
+            </label>
           </div>
-          <button type="submit" class="btn">Submit</button>
-        </form>
-      </div>
-      <div id="question3">
-        <form id="android-form">
-          <div class="form-group">
-            <h2>How important to you is the ability to build Android applications?</h2>
-            <div class="radio">
-              <label>
-                <input type="radio" name="enterprise" value="yes">
-                It is imperative that I learn to build Android apps.
-              </label>
-              <label>
-                <input type="radio" name="enterprise" value="no">
-                It is not very important that I learn to build Android apps.
-              </label>
-            </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="question" id="question3">
+      <form id="android-form">
+        <div class="form-group">
+          <h3>How important to you is the ability to build Android applications?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="android" value="yes">
+              It is imperative that I learn to build Android apps.
+            </label>
+            <label>
+              <input type="radio" name="android" value="no">
+              It is not very important that I learn to build Android apps.
+            </label>
           </div>
-          <button type="submit" class="btn">Submit</button>
-        </form>
-      </div>
-      <div class="row" id="bugs">
-        <h2>Bugs</h2>
-        <ul>
-          <li>Radio buttons appearing inline?</li>
-          <li>Applying .form-control to radio button inputs breaks them</li>
-          <li>Confirm buttons don't work</li>
-        </ul>
-      </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
+    <div class="result" id="java">
+      <h1>You should learn <span class="language">Java</span>!</h1>
+    </div>
+    <div class="row" id="bugs">
+      <h3>Bugs</h3>
+      <ul>
+        <li>Radio buttons appearing inline?</li>
+        <li>Applying .form-control to radio button inputs breaks them</li>
+        <li>Confirm buttons don't work</li>
+      </ul>
     </div>
   </div>
-
-
 </body>
 </html>

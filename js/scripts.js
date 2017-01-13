@@ -1,6 +1,7 @@
 // Business (or back-end) logic:
 var frontVsBack = 0;
 var enterprise = 0;
+var android = 0;
 
 var question1 = function(){
   if (frontVsBack === "frontend") {
@@ -24,6 +25,15 @@ var question2 = function(){
   }
 }
 
+var question3 = function(){
+  if (android === "yes") {
+    $(".question").fadeOut();
+    $("#java").fadeIn();
+  } else {
+
+  };
+};
+
 
 // Everything below this line is user interface (or front-end) logic:
 $(document).ready(function(){
@@ -39,6 +49,12 @@ $(document).ready(function(){
     enterprise = $("input:radio[name=enterprise]:checked").val();
     // console.log(frontVsBack);
     question2();
+  });
+  $("#android-form").submit(function(event) {
+    event.preventDefault();
+    android = $("input:radio[name=android]:checked").val();
+    // console.log(frontVsBack);
+    question3();
   });
 
   // $("button#front-back-yes").onClick(function(){
