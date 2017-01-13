@@ -10,14 +10,17 @@ var questionLocation = function(){
     alert("Seattle");
     $("#location").fadeOut();
     $("#question1").fadeIn();
+    $("#seattle").show();
   } else if (userLocation === "portland") {
     alert("Portland");
     $("#location").fadeOut();
     $("#question1").fadeIn();
+    $("#portland").show();
   } else {
     alert("Philadelphia")
     $("#location").fadeOut();
-    $("#question1").fadeIn();;
+    $("#question1").fadeIn();
+    $("#philadelphia").fadeIn();;
   };
 };
 
@@ -47,9 +50,11 @@ var question2 = function(){
 var question3 = function(){
   if (android === "android") {
     $(".question").fadeOut();
+    $("#result-container").fadeIn();
     $("#java").fadeIn();
   } else {
     $(".question").fadeOut();
+    $("#result-container").fadeIn();
     $("#c-sharp").fadeIn();
   };
 };
@@ -57,9 +62,11 @@ var question3 = function(){
 var question4 = function(){
   if (rubyPhp === "ruby") {
     $(".question").fadeOut();
+    $("#result-container").fadeIn();
     $("#ruby").fadeIn();
   } else {
     $(".question").fadeOut();
+    $("#result-container").fadeIn();
     $("#php").fadeIn();
   };
 };

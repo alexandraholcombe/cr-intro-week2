@@ -56,6 +56,10 @@ label {
   margin-top: 20px;
 }
 
-#java, #c-sharp, #ruby, #php {
+#portland, #seattle, #philadelphia {
+  display: none;
+}
+
+#java, #c-sharp, #ruby, #php, #result-container {
   display: none;
 }
