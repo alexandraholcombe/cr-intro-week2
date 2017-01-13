@@ -2,6 +2,7 @@
 var frontVsBack = 0;
 var company = 0;
 var android = 0;
+var rubyPhp = 0;
 
 var question1 = function(){
   if (frontVsBack === "frontend") {
@@ -18,10 +19,10 @@ var question1 = function(){
 };
 
 var question2 = function(){
-  if (company === "yes") {
+  if (company === "large") {
     $("#question3").fadeIn();
   } else {
-
+    $("#question4").fadeIn();
   }
 }
 
@@ -32,6 +33,16 @@ var question3 = function(){
   } else {
     $(".question").fadeOut();
     $("#c-sharp").fadeIn();
+  };
+};
+
+var question4 = function(){
+  if (rubyPhp === "ruby") {
+    $(".question").fadeOut();
+    $("#ruby").fadeIn();
+  } else {
+    $(".question").fadeOut();
+    $("#php").fadeIn();
   };
 };
 
@@ -56,6 +67,12 @@ $(document).ready(function(){
     android = $("input:radio[name=android]:checked").val();
     // console.log(frontVsBack);
     question3();
+  });
+  $("#ruby-php-form").submit(function(event) {
+    event.preventDefault();
+    rubyPhp = $("input:radio[name=android]:checked").val();
+    // console.log(frontVsBack);
+    question4();
   });
 
   // $("button#front-back-yes").onClick(function(){

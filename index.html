@@ -69,11 +69,11 @@
           <h3>Which company would you rather work for?</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="company" value="yes">
+              <input type="radio" name="company" value="large">
               A large enterprise company like Microsoft
             </label>
             <label>
-              <input type="radio" name="company" value="no">
+              <input type="radio" name="company" value="small">
               A smaller company, maybe even a startup
             </label>
           </div>
@@ -99,16 +99,40 @@
         <button type="submit" class="btn">Submit</button>
       </form>
     </div>
+    <div class="question" id="question4">
+      <form id="ruby-php-form">
+        <div class="form-group">
+          <h3>Which of these projects would you rather work on?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ruby-php" value="ruby">
+              A web application where users interact with dynamic content, like Twitter, Airbnb, or Groupon
+            </label>
+            <label>
+              <input type="radio" name="ruby-php" value="php">
+              A content-management system like Wordpress, Drupal, or Joomla, powerful site-building tools for clients
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </div>
     <div class="result" id="java">
       <h1>You should learn <span class="language">Java</span>!</h1>
     </div>
     <div class="result" id="c-sharp">
       <h1>You should learn <span class="language">C#</span>!</h1>
     </div>
+    <div class="result" id="ruby">
+      <h1>You should learn <span class="language">Ruby</span>!</h1>
+    </div>
+    <div class="result" id="php">
+      <h1>You should learn <span class="language">PHP</span>!</h1>
+    </div>
     <div class="row" id="bugs">
       <h3>Bugs</h3>
       <ul>
-        <li>Radio buttons appearing inline?</li>
+        <li><span class="strike">Radio buttons appearing inline?</span></li>
         <li>Applying .form-control to radio button inputs breaks them</li>
         <li>Confirm buttons don't work</li>
         <li>Fade in/fade out timing on result</li>
