@@ -1,6 +1,6 @@
 // Business (or back-end) logic:
 var frontVsBack = 0;
-var enterprise = 0;
+var company = 0;
 var android = 0;
 
 var question1 = function(){
@@ -18,7 +18,7 @@ var question1 = function(){
 };
 
 var question2 = function(){
-  if (enterprise === "yes") {
+  if (company === "yes") {
     $("#question3").fadeIn();
   } else {
 
@@ -26,11 +26,12 @@ var question2 = function(){
 }
 
 var question3 = function(){
-  if (android === "yes") {
+  if (android === "android") {
     $(".question").fadeOut();
     $("#java").fadeIn();
   } else {
-
+    $(".question").fadeOut();
+    $("#c-sharp").fadeIn();
   };
 };
 
@@ -44,9 +45,9 @@ $(document).ready(function(){
     // console.log(frontVsBack);
     question1();
   });
-  $("#enterprise-form").submit(function(event) {
+  $("#company-form").submit(function(event) {
     event.preventDefault();
-    enterprise = $("input:radio[name=enterprise]:checked").val();
+    company = $("input:radio[name=company]:checked").val();
     // console.log(frontVsBack);
     question2();
   });
