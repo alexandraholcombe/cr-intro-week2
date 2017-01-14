@@ -30,10 +30,16 @@ body {
 
 .citation {
   font-style: italic;
+  font-weight: 400;
 }
 
 p.confirm {
   text-align: center;
+}
+
+button {
+  background-color: #fc2419;
+  color: white;
 }
 
 button.confirm {
@@ -52,6 +58,10 @@ label {
 .btn-started {
   width: 25%;
   margin: 0 auto;
+}
+
+.bn-lg {
+  margin-top: 30px;
 }
 
 /*Hide IDs*/
