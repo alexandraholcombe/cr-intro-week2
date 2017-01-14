@@ -1,6 +1,6 @@
 # Epicodus Track Suggester
 
-#### _Intractive Guide to Choose an Epicodus Track _
+#### _Interactive Guide to Choose an Epicodus Track_
 
 #### By _**Alexandra Holcombe**_
 
