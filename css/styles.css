@@ -3,12 +3,21 @@ body {
   background-color: #00B3B4;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  font-size: 20px;
 }
 .container {
   background-color: #fff;
   height: 100vh;
   padding-top: 100px;
   width: 75%;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.logo {
+  margin: 20px;
 }
 
 /*.content-container {
@@ -30,7 +39,7 @@ body {
 
 .citation {
   font-style: italic;
-  font-weight: 400;
+  font-weight: 400i;
 }
 
 p.confirm {

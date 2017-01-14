@@ -12,165 +12,156 @@
 <body>
   <div class="container">
     <!-- <div class="content-container"> -->
-      <div id="splash-page">
-        <h1>Epicodus Track Suggester</h1>
-        <h2>An Interactive Guide to Choosing Your Epicodus Track</h2>
-        <button type="button" class="btn btn-lg btn-25" id="btn-started">Let's get started!</button>
-      </div>
-      <div class="question" id="location">
-        <form id="location-form">
-          <div class="form-group">
-            <select class="form-control" id="user-location">
-              <option value="portland">Portland</option>
-              <option value="seattle">Seattle</option>
-              <option value="philadelphia">Philadelphia</option>
-            </select>
-            <button type="submit" class="btn btn-lg">Submit</button>
-          </div>
-        </form>
-      </div>
-      <div class="question" id="question1">
-        <form id="front-or-back-form">
-          <div class="form-group">
-            <h3>Would you rather:</h3>
-            <div class="radio">
-              <label>
-                <input type="radio" name="frontvsback" value="frontend">
-                Make things look and work well for the user
-              </label>
-              <label>
-                <input type="radio" name="frontvsback" value="backend">
-                Write the code that connects the server, the application, and the database
-              </label>
-            </div>
-          </div>
+    <div id="splash-page">
+      <h1>Epicodus Track Suggester</h1>
+      <h2>An Interactive Guide to Choosing Your Epicodus Track</h2>
+      <button type="button" class="btn btn-lg btn-25" id="btn-started">Let's get started!</button>
+    </div>
+    <div class="question" id="location">
+      <form id="location-form">
+        <div class="form-group">
+          <label for="user-location">Where would you like to attend?</label>
+          <select class="form-control" id="user-location">
+            <option value="portland">Portland</option>
+            <option value="seattle">Seattle</option>
+            <option value="philadelphia">Philadelphia</option>
+          </select>
           <button type="submit" class="btn btn-lg">Submit</button>
-        </form>
-
-
-      </div>
-      <div id="def-pop-container">
-        <div class="def-pop-box" id="frontend-def">
-          <h3>Frontend Development</h3>
-          <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
-            <p>When we discuss the “frontend” of the web, what we’re really talking about is the part of the web that you can see and interact with. The frontend usually consists of two parts: the web design and front end web development.</p>
-
-            <p>In the past when someone discussed development it usually referred to the backend, but in recent years there has been a real need to differentiate between designers that worked strictly in Photoshop and those that could code HTML and CSS. It went even further when designers crossed the lines to working with JavaScript and jQuery.</p>
-
-            <p>So now when we discuss the term “web design”, we’re really talking about those that work with Photoshop and Fireworks, and those that code using HTML, CSS, JavaScript or jQuery (it might be important here to state that jQuery is a compiled library of Javascript).</p>
-
-            <p>Everything that you see when using the web is a combination of HTML, CSS, and JavaScript all being controlled by your computer’s browser. These include things like fonts, drop-down menus, buttons, transitions, sliders, contact forms, etc.</p>
-          </blockquote>
-
-          <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
         </div>
-        <div class="def-pop-box" id="backend-def">
-          <h3>Backend Development</h3>
-          <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
-            <p>The backend usually consists of three parts: a server, an application, and a database. If you book a flight or buy concert tickets, you usually open a website and interact with the frontend. Once you’ve entered that information, the application stores it in a database that was created on a server. For sake of ease, just think about a database as a giant Excel spreadsheet on your computer, but your computer (server) is stored somewhere in Arizona</p>
-
-            <p>All of that information stays on the server so when you log back into the application to print your tickets, all of the information is still there in your account.</p>
-
-            <p>We call a person that builds all of this technology to work together a backend developer. Backend technologies usually consist of languages like PHP, Ruby, Python, etc. To make them even easier to use they’re usually enhanced by frameworks like Ruby on Rails, Cake PHP, and Code Igniter that all make development faster and easier to collaborate on.</p>
-          </blockquote>
-
-          <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
-        </div>
-        <p class="confirm">Sound right?</p>
-        <button type="button" class="confirm btn btn-lg" id="front-back-yes">That's me!</button>
-        <button type="button" class="confirm btn btn-lg" id="front-back-no">I don't think so.</button>
-      </div>
-      <div class="question" id="question2">
-        <form id="company-form">
-          <div class="form-group">
-            <h3>Which company would you rather work for?</h3>
-            <div class="radio">
-              <label>
-                <input type="radio" name="company" value="large">
-                A large enterprise company like Microsoft
-              </label>
-              <label>
-                <input type="radio" name="company" value="small">
-                A smaller company, maybe even a startup
-              </label>
-            </div>
+      </form>
+    </div>
+    <div class="question" id="question1">
+      <form id="front-or-back-form">
+        <div class="form-group">
+          <h3>Would you rather:</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="frontvsback" value="frontend">
+              Make things look and work well for the user
+            </label>
+            <label>
+              <input type="radio" name="frontvsback" value="backend">
+              Write the code that connects the server, the application, and the database
+            </label>
           </div>
-          <button type="submit" class="btn btn-lg">Submit</button>
-        </form>
+        </div>
+        <button type="submit" class="btn btn-lg">Submit</button>
+      </form>
+    </div>
+    <div id="def-pop-container">
+      <div class="def-pop-box" id="frontend-def">
+        <h3>Frontend Development</h3>
+        <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
+          <p>When we discuss the “frontend” of the web, what we’re really talking about is the part of the web that you can see and interact with. The frontend usually consists of two parts: the web design and front end web development.</p>
+
+          <p>In the past when someone discussed development it usually referred to the backend, but in recent years there has been a real need to differentiate between designers that worked strictly in Photoshop and those that could code HTML and CSS. It went even further when designers crossed the lines to working with JavaScript and jQuery.</p>
+
+          <p>So now when we discuss the term “web design”, we’re really talking about those that work with Photoshop and Fireworks, and those that code using HTML, CSS, JavaScript or jQuery (it might be important here to state that jQuery is a compiled library of Javascript).</p>
+
+          <p>Everything that you see when using the web is a combination of HTML, CSS, and JavaScript all being controlled by your computer’s browser. These include things like fonts, drop-down menus, buttons, transitions, sliders, contact forms, etc.</p>
+        </blockquote>
+        <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
       </div>
-      <div class="question" id="question3">
-        <form id="android-form">
-          <div class="form-group">
-            <h3>Which of these projects would you rather work on?</h3>
-            <div class="radio">
-              <label>
-                <input type="radio" name="android" value="android">
-                An app for Android devices
-              </label>
-              <label>
-                <input type="radio" name="android" value="chase">
-                An online banking website like Chase.com
-              </label>
-            </div>
+      <div class="def-pop-box" id="backend-def">
+        <h3>Backend Development</h3>
+        <blockquote class="blockquote" cite="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend">
+          <p>The backend usually consists of three parts: a server, an application, and a database. If you book a flight or buy concert tickets, you usually open a website and interact with the frontend. Once you’ve entered that information, the application stores it in a database that was created on a server. For sake of ease, just think about a database as a giant Excel spreadsheet on your computer, but your computer (server) is stored somewhere in Arizona</p>
+
+          <p>All of that information stays on the server so when you log back into the application to print your tickets, all of the information is still there in your account.</p>
+
+          <p>We call a person that builds all of this technology to work together a backend developer. Backend technologies usually consist of languages like PHP, Ruby, Python, etc. To make them even easier to use they’re usually enhanced by frameworks like Ruby on Rails, Cake PHP, and Code Igniter that all make development faster and easier to collaborate on.</p>
+        </blockquote>
+        <p class="citation">Josh Long, <a href="https://teamtreehouse.com/" target="_blank">Treehouse</a>, <a href="http://blog.teamtreehouse.com/i-dont-speak-your-language-frontend-vs-backend" target="_blank">"I Don't Speak Your Language: Frontend vs. Backend"</a></p>
+      </div>
+      <p class="confirm">Sound right?</p>
+      <button type="button" class="confirm btn btn-lg" id="front-back-yes">That's me!</button>
+      <button type="button" class="confirm btn btn-lg" id="front-back-no">I don't think so.</button>
+    </div>
+    <div class="question" id="question2">
+      <form id="company-form">
+        <div class="form-group">
+          <h3>Which company would you rather work for?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="company" value="large">
+              A large enterprise company like Microsoft
+            </label>
+            <label>
+              <input type="radio" name="company" value="small">
+              A smaller company, maybe even a startup
+            </label>
           </div>
-          <button type="submit" class="btn btn-lg">Submit</button>
-        </form>
-      </div>
-      <div class="question" id="question4">
-        <form id="ruby-php-form">
-          <div class="form-group">
-            <h3>Which of these projects would you rather work on?</h3>
-            <div class="radio">
-              <label>
-                <input type="radio" name="ruby-php" value="ruby">
-                A web application where users interact with dynamic content, like Twitter, Airbnb, or Groupon
-              </label>
-              <label>
-                <input type="radio" name="ruby-php" value="php">
-                A content-management system like Wordpress, Drupal, or Joomla, powerful site-building tools for clients
-              </label>
-            </div>
+        </div>
+        <button type="submit" class="btn btn-lg">Submit</button>
+      </form>
+    </div>
+    <div class="question" id="question3">
+      <form id="android-form">
+        <div class="form-group">
+          <h3>Which of these projects would you rather work on?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="android" value="android">
+              An app for Android devices
+            </label>
+            <label>
+              <input type="radio" name="android" value="chase">
+              An online banking website like Chase.com
+            </label>
           </div>
-          <button type="submit" class="btn btn-lg">Submit</button>
-        </form>
+        </div>
+        <button type="submit" class="btn btn-lg">Submit</button>
+      </form>
+    </div>
+    <div class="question" id="question4">
+      <form id="ruby-php-form">
+        <div class="form-group">
+          <h3>Which of these projects would you rather work on?</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="ruby-php" value="ruby">
+              A web application where users interact with dynamic content, like Twitter, Airbnb, or Groupon
+            </label>
+            <label>
+              <input type="radio" name="ruby-php" value="php">
+              A content-management system like Wordpress, Drupal, or Joomla, powerful site-building tools for clients
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-lg">Submit</button>
+      </form>
+    </div>
+    <div id="result-container">
+      <div class="result" id="css">
+        <h1>You should learn <span class="language">CSS/Design</span>!</h1>
+        <img src="images/css.png" class="logo" alt="CSS Logo"><img src="images/design.png" class="logo" alt="Design Logo">
       </div>
-      <div id="result-container">
-        <div class="result" id="css">
-          <h1>You should learn <span class="language">CSS/Design</span>!</h1>
-        </div>
-        <div class="result" id="java">
-          <h1>You should learn <span class="language">Java/Android</span>!</h1>
-        </div>
-        <div class="result" id="c-sharp">
-          <h1>You should learn <span class="language">C#/.NET</span>!</h1>
-        </div>
-        <div class="result" id="ruby">
-          <h1>You should learn <span class="language">Ruby/Rails</span>!</h1>
-        </div>
-        <div class="result" id="php">
-          <h1>You should learn <span class="language">PHP/Drupal</span>!</h1>
-        </div>
-        <div id="portland">
-          <h3><a href="https://www.epicodus.com/portland/" target="_blank">Classes in Portland</a></h3>
-        </div>
-        <div id="seattle">
-          <h3><a href="https://www.epicodus.com/seattle/" target="_blank">Classes in Seattle</a></h3>
-        </div>
-        <div id="philadelphia">
-          <h3><a href="https://www.epicodus.com/philadelphia/" target="_blank">Classes in Philadelphia</a></h3>
-        </div>
+      <div class="result" id="java">
+        <h1>You should learn <span class="language">Java/Android</span>!</h1>
+        <img src="images/java.png" class="logo" alt="Java Logo"><img src="images/android.png" class="logo" alt="Android Logo">
+      </div>
+      <div class="result" id="c-sharp">
+        <h1>You should learn <span class="language">C#/.NET</span>!</h1>
+        <img src="images/c-sharp.png" class="logo" alt="C# Logo"><img src="images/dotnet.png" class="logo" alt=".NET Logo">
+      </div>
+      <div class="result" id="ruby">
+        <h1>You should learn <span class="language">Ruby/Rails</span>!</h1>
+        <img src="images/ruby.png" class="logo" alt="Ruby Logo"><img src="images/rails.png" class="logo" alt="Rails Logo">
+      </div>
+      <div class="result" id="php">
+        <h1>You should learn <span class="language">PHP/Drupal</span>!</h1>
+        <img src="images/php.png" class="logo" alt="PHP Logo"><img src="images/drupal.png" class="logo" alt="Drupal Logo">
+      </div>
+      <div id="portland">
+        <h3><a href="https://www.epicodus.com/portland/" target="_blank">Classes in Portland</a></h3>
+      </div>
+      <div id="seattle">
+        <h3><a href="https://www.epicodus.com/seattle/" target="_blank">Classes in Seattle</a></h3>
+      </div>
+      <div id="philadelphia">
+        <h3><a href="https://www.epicodus.com/philadelphia/" target="_blank">Classes in Philadelphia</a></h3>
       </div>
     </div>
-    <div class="row" id="bugs">
-      <h3>Bugs</h3>
-      <ul>
-        <li><span class="strike">Radio buttons appearing inline?</span></li>
-        <li>Applying .form-control to radio button inputs breaks them</li>
-        <li><span class="strike">Confirm buttons don't work</span></li>
-        <li>Fade in/fade out timing on result</li>
-        <li>Very repetitive scripts</li>
-      </ul>
-    <!-- </div> -->
   </div>
 </body>
 </html>
