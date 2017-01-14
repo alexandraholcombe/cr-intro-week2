@@ -8,6 +8,8 @@
 
 This web page is designed to help the user choose an Epicodus track by narrowing down results based on survey responses.
 
+Page may be viewed on GH Pages [here](https://alexandraholcombe.github.io/cr-intro-week2/).
+
 ## Setup/Installation Requirements
 
 * Clone to local machine
