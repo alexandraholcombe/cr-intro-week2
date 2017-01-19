@@ -20,7 +20,6 @@ Page may be viewed on GH Pages [here](https://alexandraholcombe.github.io/cr-int
 
 * No current application of Bootstrap form-control
 * Margins on buttons are not behaving as intended
-* Fade timing is not ideally adjusted
 * Code is not fully optimized; some code is unnecessarily redundant.
 
 ## Support and contact details
