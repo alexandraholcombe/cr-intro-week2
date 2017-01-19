@@ -119,7 +119,7 @@ $(document).ready(function(){
   });
   $("#ruby-php-form").submit(function(event) {
     event.preventDefault();
-    rubyPhp = $("input:radio[name=android]:checked").val();
+    rubyPhp = $("input:radio[name=ruby-php]:checked").val();
     // console.log(frontVsBack);
     question4();
   });
